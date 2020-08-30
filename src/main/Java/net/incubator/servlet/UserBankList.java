@@ -42,7 +42,7 @@ public class UserBankList extends HttpServlet {
                 message = String.valueOf(sum);
             }
             else {
-                response.sendError(404,requestQueryString+"\" not found!");
+                response.sendError(404,requestQueryString+" not found!");
             }
 
         } catch (ClassNotFoundException e) {

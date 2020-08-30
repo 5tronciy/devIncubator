@@ -8,6 +8,10 @@ public class User {
     private String name;
     private String sureName;
 
+    public int getUserid() {
+        return userid;
+    }
+
     public String getName() {
         return name;
     }

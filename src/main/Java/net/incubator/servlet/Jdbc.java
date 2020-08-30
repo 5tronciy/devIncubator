@@ -27,6 +27,7 @@ public class Jdbc {
         Class.forName(JDBC_DRIVER);
         System.out.println("Creating connection...");
         connection = DriverManager.getConnection(DATABASE_URL, USER, PASSWORD);
+
         try {
             String SQL = "SELECT * FROM `user` WHERE `userid`=?;";
             preparedStatement = connection.prepareStatement(SQL);
